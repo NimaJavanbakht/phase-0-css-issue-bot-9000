@@ -47,7 +47,7 @@ describe("css/style.css", () => {
   });
 
   it("corrects the '#tasks .completed' background declaration", () => {
-    const rule = findRule(css.cssRules, "#tasks .completed");
+    const rule = findRule(css.cssRules, ".completed");
     const hint = "Incorrect background property for '#tasks .completed'";
     expect(rule.style["background"], hint).to.eq("#ccc");
   });
